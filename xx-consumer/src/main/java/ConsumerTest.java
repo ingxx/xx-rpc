@@ -12,6 +12,6 @@ import java.net.InetSocketAddress;
 public class ConsumerTest {
     public static void main(String[] args) {
         HelloApi service = BioRPCClient.getRemoteProxyObj(HelloApi.class, new InetSocketAddress("localhost", 9999));
-        System.out.println(service.sayHello());
+        System.out.println(service.getUser());
     }
 }

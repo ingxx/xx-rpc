@@ -1,5 +1,7 @@
 package api;
 
+import pojo.User;
+
 /**
  * @program: xx-rpc
  * @description:
@@ -9,4 +11,6 @@ package api;
 public interface HelloApi {
 
     String sayHello();
+
+    User getUser();
 }
